@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -36,11 +36,11 @@
         }
         h2 {
             color: #666;
-            cursor: pointer;
-            transition: transform 0.3s ease; /* Adicionando transição de transformação */
+            transition: color 0.3s ease; /* Adicionando transição de cor */
+            cursor: pointer; /* Adicionando cursor de ponteiro */
         }
         h2:hover {
-            transform: translateY(-5px); /* Movendo para cima quando o mouse passa sobre */
+            color: #f00; /* Alterando a cor ao passar o mouse */
         }
         p {
             color: #888;
@@ -73,7 +73,7 @@
             <img src="c:\Users\COMPUTADOR22\Downloads\IMG-20231206-WA0117.jpg" alt="Luiz Eduardo">
         </section>
         <section>
-            <h2 id="monteiro">Monteiro</h2>
+            <h2 id="monteiro">Monteiro</h2> <!-- Adicionando ID para a seção de Monteiro -->
             <p>Estagiário que adora leite.</p>
             <img src="c:\Users\COMPUTADOR22\Downloads\IMG-20231105-WA0020.jpg" alt="Monteiro">
         </section>
@@ -93,9 +93,11 @@
         Seu navegador não suporta a reprodução de áudio.
     </audio>
 
+    <!-- Script JavaScript -->
     <script>
+        // Adicionando um evento de clique ao nome "Monteiro" para redirecionar para outra página
         document.getElementById("monteiro").addEventListener("click", function() {
-            window.location.href = "outra_pagina.html";
+            window.location.href = "outra_pagina.html"; // Substitua "outra_pagina.html" pelo URL da outra página
         });
     </script>
 </body>
